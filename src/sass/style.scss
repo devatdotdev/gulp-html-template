@@ -1,6 +1,6 @@
-@import "imports/_functions";
-@import "imports/_variables";
-@import "imports/_breakpoints";
+@import 'imports/_functions';
+@import 'imports/_variables';
+@import 'imports/_breakpoints';
 
 $bodyBackground: white;
 $darkHighlight: #343a40;
@@ -58,7 +58,7 @@ nav {
 }
 
 .dark-overlay:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -179,4 +179,14 @@ nav {
   color: $lightHighlight !important;
   background-color: $darkHighlight !important;
   transition: all 1s;
+}
+
+.responsive-font {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-font {
+    font-size: 0.85rem;
+  }
 }
